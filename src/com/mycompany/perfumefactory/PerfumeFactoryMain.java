@@ -33,7 +33,13 @@ public class PerfumeFactoryMain {
         StageOnePerfume perfume1 = perfumeStageOneBuilder.getResult();
         System.out.println(perfume1.info());        
         
+        for(GlassType glassType: GlassType.lstGlassType) {
+        	System.out.println(glassType.getGlassType()+" "+glassType.getGlassSize());
+        }
         
+        for(Fragance fragance: Fragance.lstFragance) {
+        	System.out.println(fragance.getName()+"  "+fragance.getSexFragance());
+        }
     }
     
 }

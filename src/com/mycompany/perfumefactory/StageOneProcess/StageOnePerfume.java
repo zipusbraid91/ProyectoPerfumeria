@@ -4,6 +4,8 @@
  */
 package com.mycompany.perfumefactory.StageOneProcess;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author IVAN RIOS
@@ -12,10 +14,13 @@ public class StageOnePerfume {
 
     private final GlassType glassType;
     private final Fragance fragance;
+    
+    public static ArrayList<StageOnePerfume> lstStageOnePerfume = new ArrayList<StageOnePerfume>();
 
     public StageOnePerfume(GlassType glassType, Fragance fragance) {
         this.glassType = glassType;
         this.fragance = fragance;
+        lstStageOnePerfume.add(this);
     }
 
     public GlassType getGlassType() {
